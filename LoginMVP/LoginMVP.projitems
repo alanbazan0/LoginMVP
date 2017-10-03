@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{415755F3-3648-4F30-A000-531B9DA65076}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>LoginMVP</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Presenters\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataAccess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ILoginView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Presenters\LoginPresenter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\UsersDataAccess.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\DataService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\HTTPParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
+  </ItemGroup>
+</Project>
